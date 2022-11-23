@@ -1,0 +1,120 @@
+% Created 2022-09-14 水 22:14
+% Intended LaTeX compiler: pdflatex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Hisanobu Nakamura}
+\date{\textit{<2022-09-02 金>}}
+\title{社会的選択理論勉強会}
+\hypersetup{
+ pdfauthor={Hisanobu Nakamura},
+ pdftitle={社会的選択理論勉強会},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{社会的選択理論への招待　坂井豊貴}
+\label{sec:org528c155}
+社会的選択理論の入門書
+
+\subsection{本書の構成}
+\label{sec:orgb705f08}
+\begin{itemize}
+\item 第1章：ボルダとコンドル背による議論を紹介
+\begin{itemize}
+\item ボルダの論文とコンドルセによる議論
+\end{itemize}
+\item 第２章：コンドルセによる統計学的な議論について扱う。
+\begin{itemize}
+\item 陪審定理について扱う。本書以外で、他に詳しい解説が見当たらないらしい。
+\end{itemize}
+\item 第３章：多数決の代替案として、ボルダルールが望ましいという議論をする。
+\begin{itemize}
+\item 他の代替案なしで安易に批判するものが少なくないが、ここでされる肯定的な議論を踏まえていないものが多い
+\item この章の議論は主に1970年代になされたものだが、専門家の間でも十分に認識されているとは言い難く、再評価がなされてよいものだと筆者は言っている
+\end{itemize}
+\item 第4章：政治と選択
+\begin{itemize}
+\item ダンカン・ブラック(Duncan Black \url{https://en.wikipedia.org/wiki/Duncan\_Black})
+\begin{itemize}
+\item 単峰性という条件が成り立つときはペア全勝者が存在することを発見。
+\item 社会科学全般へのインパクトが大きかった。実証政治理論とメカニズムデザインという分野を生み出すきっかけとなった
+\end{itemize}
+\end{itemize}
+\item 第5章：ケネス・アローが考案した二項独立性という条件を中心に論じる。
+\begin{itemize}
+\item コンドルセはペアごとに選択肢を比較することにこだわったが、アローはその姿勢を徹底追及して、飛行独立性という条件を定式化して議論を展開した
+\item アローは、一般には二項独立性を尊重し切ることはできないという不可能性定理と、単峰性が成り立つときにはその不可能性が回避できるという可能性定理をともに示した。
+\begin{itemize}
+\item 本書では、有権者数と選択肢がともに３であるケースについて詳細な証明を与える
+\end{itemize}
+\end{itemize}
+\item 第６章：社会状態の良し悪しを判定する基準である、社会構成基準について論じる。
+\begin{itemize}
+\item 功利主義基準、ナッシュ基準、マキシミン基準、レキシミン基準などを比較検討
+\item アローの不可能性定理再び。アマルティア・センの自由主義のパラドックス、ロールズ流の正義論に基づく解消の考察
+\end{itemize}
+\item 第７章：社会的選択理論と人民主権社会を絡めて論じる。時事的なテーマ。
+\end{itemize}
+
+\subsection{本書の特徴}
+\label{sec:orgc0c4c37}
+社会的選択理論の教科書で、ボルダとコンドルセの古典から議論を立ち上げていく構成を取ったものはおそらく他にない。
+
+現在、社会的選択理論というときには、
+\begin{enumerate}
+\item 投票における意思集約方法の設計
+\item 社会状態の望ましさを評価する基準の構築
+\end{enumerate}
+
+を主に含むことが多い。
+本書は1) に軸足を置いているが、第６章で 2) についても詳しく扱う。日本で出版されている社会的選択理論の本は2)を重視する傾向が強く、1)を重視する書籍は珍しい。
+
+\section{第１章　問題の出発点}
+\label{sec:org3050e57}
+\subsection{1.1.1 ボルダルールの提案}
+\label{sec:org9f662a9}
+1770年にジャン＝シャルル・ド・ボルダ(Jean-Charles de Borda, 1733-1799)はパリ王立科学アカデミー(Académie des sciences)において、多数決という意思集約方法の本質的な欠陥に関する研究報告を行った。
+
+冒頭パラグラフ：
+\begin{quote}
+「投票において再多数票を得た選択肢は、常に人々の意思を表していると一般に考えられているようで、私はそれに関する論争を聞いたことがない。つまりそうした選択肢は、他の選択肢よりも有権者からz好まれているはずだというわけである。
+しかし私はこうした考えが、選択肢が２個しかないケースを除いては成立しないことを明らかにしていく。」
+\end{quote}
+有権者数:２１人 \\
+選択肢: \{x,y,z\} (政策、候補者etc) \\
+有権者が以下のような順序をつけているとする。\\
+
+\begin{center}
+\begin{tabular}{lllll}
+ & 4 persons & 4 persons & 7 persons & 6 persons\\
+\hline
+1st & x & x & y & z\\
+2nd & y & z & z & y\\
+3rd & z & y & x & x\\
+\end{tabular}
+\end{center}
+
+
+これらの順序に基づき、一人の有権者が１枚の投票用紙を与えられ１つの選択肢を書く、単記式の多数決を行えば
+
+\begin{itemize}
+\item ８票が x
+\item 7票が y
+\end{itemize}
+\end{document}

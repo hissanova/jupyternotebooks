@@ -1,0 +1,2347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<!-- 2022-10-12 水 19:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>社会的選択理論勉強会</title>
+<meta name="author" content="Hisanobu Nakamura" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">社会的選択理論勉強会</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>&#30446;&#27425;</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org24f118f">社会的選択理論への招待　坂井豊貴</a>
+<ul>
+<li><a href="#org08cb77c">本書の構成</a></li>
+<li><a href="#orgc782fd3">本書の特徴</a></li>
+</ul>
+</li>
+<li><a href="#org6ec0ad2">第１章　問題の出発点</a>
+<ul>
+<li><a href="#orga6c424c">1.1.1 ボルダルールの提案</a></li>
+<li><a href="#org7730454">1.1.2 ボルダ勝者と過半数有権者</a></li>
+<li><a href="#org7e90b4c">1.1.3 ボルダルールの戦略的操作</a></li>
+<li><a href="#org1074bee">1.2 コンドルセの考察を巡って</a></li>
+<li><a href="#orga8f3874">1.2.1 コンドルセと一般意志</a>
+<ul>
+<li><a href="#orge6ed8fd">コンドルセの方法　選択肢が３つの場合の例</a></li>
+<li><a href="#orga4487e1">ルソーの一般意志</a></li>
+<li><a href="#org086a271">コンドルセの方法の瑕疵</a></li>
+</ul>
+</li>
+<li><a href="#org4bcfd86">1.2.2 2択問題における多数決の優位性</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org24f118f" class="outline-2">
+<h2 id="org24f118f">社会的選択理論への招待　坂井豊貴</h2>
+<div class="outline-text-2" id="text-org24f118f">
+<p>
+社会的選択理論の入門書
+</p>
+</div>
+
+<div id="outline-container-org08cb77c" class="outline-3">
+<h3 id="org08cb77c">本書の構成</h3>
+<div class="outline-text-3" id="text-org08cb77c">
+<ul class="org-ul">
+<li>第1章：ボルダとコンドル背による議論を紹介
+<ul class="org-ul">
+<li>ボルダの論文とコンドルセによる議論</li>
+</ul></li>
+<li>第２章：コンドルセによる統計学的な議論について扱う。
+<ul class="org-ul">
+<li>陪審定理について扱う。本書以外で、他に詳しい解説が見当たらないらしい。</li>
+</ul></li>
+<li>第３章：多数決の代替案として、ボルダルールが望ましいという議論をする。
+<ul class="org-ul">
+<li>他の代替案なしで安易に批判するものが少なくないが、ここでされる肯定的な議論を踏まえていないものが多い</li>
+<li>この章の議論は主に1970年代になされたものだが、専門家の間でも十分に認識されているとは言い難く、再評価がなされてよいものだと筆者は言っている</li>
+</ul></li>
+<li>第4章：政治と選択
+<ul class="org-ul">
+<li>ダンカン・ブラック(Duncan Black <a href="https://en.wikipedia.org/wiki/Duncan_Black">https://en.wikipedia.org/wiki/Duncan_Black</a>)
+<ul class="org-ul">
+<li>単峰性という条件が成り立つときはペア全勝者が存在することを発見。</li>
+<li>社会科学全般へのインパクトが大きかった。実証政治理論とメカニズムデザインという分野を生み出すきっかけとなった</li>
+</ul></li>
+</ul></li>
+<li>第5章：ケネス・アローが考案した二項独立性という条件を中心に論じる。
+<ul class="org-ul">
+<li>コンドルセはペアごとに選択肢を比較することにこだわったが、アローはその姿勢を徹底追及して、飛行独立性という条件を定式化して議論を展開した</li>
+<li>アローは、一般には二項独立性を尊重し切ることはできないという不可能性定理と、単峰性が成り立つときにはその不可能性が回避できるという可能性定理をともに示した。
+<ul class="org-ul">
+<li>本書では、有権者数と選択肢がともに３であるケースについて詳細な証明を与える</li>
+</ul></li>
+</ul></li>
+<li>第６章：社会状態の良し悪しを判定する基準である、社会構成基準について論じる。
+<ul class="org-ul">
+<li>功利主義基準、ナッシュ基準、マキシミン基準、レキシミン基準などを比較検討</li>
+<li>アローの不可能性定理再び。アマルティア・センの自由主義のパラドックス、ロールズ流の正義論に基づく解消の考察</li>
+</ul></li>
+<li>第７章：社会的選択理論と人民主権社会を絡めて論じる。時事的なテーマ。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc782fd3" class="outline-3">
+<h3 id="orgc782fd3">本書の特徴</h3>
+<div class="outline-text-3" id="text-orgc782fd3">
+<p>
+社会的選択理論の教科書で、ボルダとコンドルセの古典から議論を立ち上げていく構成を取ったものはおそらく他にない。
+</p>
+
+<p>
+現在、社会的選択理論というときには、
+</p>
+<ol class="org-ol">
+<li>投票における意思集約方法の設計</li>
+<li>社会状態の望ましさを評価する基準の構築</li>
+</ol>
+
+<p>
+を主に含むことが多い。
+本書は1) に軸足を置いているが、第６章で 2) についても詳しく扱う。日本で出版されている社会的選択理論の本は2)を重視する傾向が強く、1)を重視する書籍は珍しい。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6ec0ad2" class="outline-2">
+<h2 id="org6ec0ad2">第１章　問題の出発点</h2>
+<div class="outline-text-2" id="text-org6ec0ad2">
+</div>
+<div id="outline-container-orga6c424c" class="outline-3">
+<h3 id="orga6c424c">1.1.1 ボルダルールの提案</h3>
+<div class="outline-text-3" id="text-orga6c424c">
+<p>
+1770年にジャン＝シャルル・ド・ボルダ(Jean-Charles de Borda, 1733-1799)はパリ王立科学アカデミー(Académie des sciences)において、多数決という意思集約方法の本質的な欠陥に関する研究報告を行った。
+</p>
+
+<p>
+冒頭パラグラフ：
+</p>
+<blockquote>
+<p>
+「投票において再多数票を得た選択肢は、常に人々の意思を表していると一般に考えられているようで、私はそれに関する論争を聞いたことがない。つまりそうした選択肢は、他の選択肢よりも有権者からz好まれているはずだというわけである。
+しかし私はこうした考えが、選択肢が２個しかないケースを除いては成立しないことを明らかにしていく。」
+</p>
+</blockquote>
+<p>
+有権者数:２１人 <br />
+選択肢: {x,y,z} (政策、候補者etc) <br />
+有権者が以下のような順序をつけているとする。<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">4 人</th>
+<th scope="col" class="org-left">4 人</th>
+<th scope="col" class="org-left">7 人</th>
+<th scope="col" class="org-left">6 人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(z\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(y\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+これらの順序に基づき、一人の有権者が１枚の投票用紙を与えられ１つの選択肢を書く、 <b>単記式</b> の多数決を行えば
+</p>
+
+<ul class="org-ul">
+<li>８票が \(x\)</li>
+<li>7票が \(y\)</li>
+<li>6票が \(z\)</li>
+</ul>
+
+<p>
+に入り、 \(x\) が勝つ。このように多数決でかつ選択肢のことを多数決勝者と呼ぶ。
+</p>
+
+<p>
+ここで問題だが、\(x\) は他の選択肢と比して有権者から高く評価されているといえるのだろうか？
+実際、\(x\) と \(y\) だけをペアで比較してみると
+</p>
+
+<ul class="org-ul">
+<li>8人が \(x\) を \(y\) より</li>
+<li>13人が \(y\) を \(x\) より</li>
+</ul>
+
+<p>
+高く評価しており、過半数のものは \(y\) を \(x\) より高く評価している。
+また、 \(x\) と \(z\) だけをペアで比較してみても、同様に
+</p>
+
+<ul class="org-ul">
+<li>8人が \(x\) を \(z\) より</li>
+<li>13人が \(z\) を \(x\) より</li>
+</ul>
+
+<p>
+高く評価しており、過半数のものは \(z\) を \(x\) より高く評価している。
+</p>
+
+<p>
+つまり、 \(x\) は \(y\) にも \(z\) にもペア毎の多数決で負ける選択肢である。
+</p>
+
+<p>
+にも関わらずxが全体での多数決で勝てるのは、2つの選択肢yとzについて票が割れているからに他ならない。
+</p>
+
+<p>
+このことをボルダは「2人のアスリートが競い疲れきってしまった後で、第3の最も弱い者に負けてしまうようなものだ」と表現した。
+</p>
+
+<p>
+この観点から多数決に疑問を呈したボルダは次の <b>ボルダルール</b> と呼ばれるルールを考察した。
+</p>
+
+<p>
+ボルダルール：各選択肢への順位をすべて書き、それに応じて加点し和を取る。選択肢の数が３つなら、1位に3点、2位に2点、3位に1点というように加点する。
+</p>
+
+<p>
+今の例での得点和はそれぞれ
+</p>
+
+<ul class="org-ul">
+<li>\(x\) の得点: \(3\cdot 8 + 2 \cdot 0 + 1 \cdot 13 = 37\)</li>
+<li>\(y\) の得点: \(3\cdot 7 + 2 \cdot 10 + 1 \cdot 4 = 45\)</li>
+<li>\(z\) の得点: \(3\cdot 6 + 2 \cdot 11 + 1 \cdot 4 = 44\)</li>
+</ul>
+
+<p>
+となる。  
+</p>
+
+<p>
+こうした得点和を <b>ボルダ得点</b> と呼び、 \(p(x) = 37\) 、\(p(y) = 45\) 、\(p(z) = 44\) のように表す。
+また、ボルダ得点が最大になる選択肢をボルダ勝者と呼ぶ。ここでのぼるだ勝者は \(y\) である。
+</p>
+
+<p>
+\(x\) は、ペア全敗者と呼ぶことにする。
+</p>
+
+<p>
+ボルダの論文では、「多数決がペア全敗者を選びうる」ことを指摘してから、ボルダルールを導入しているが、ボルダルールがペア全敗者を選ばないことの証明は書かれていない。
+実際の証明が与えられたのは200年後。
+</p>
+
+<p>
+<b>Theorem</b> ボルダ勝者はペア全敗者ではない。<br />
+<b>[Proof]</b><br />
+今、次の状況を考える。
+</p>
+<ul class="org-ul">
+<li>有権者：クロ、タマ、ポチ</li>
+<li>選択肢: \(x,y,z\)</li>
+<li>一人一人の有権者はそれぞれ、1位の選択肢に3点、2位に2点、3位に1点を加点する。</li>
+</ul>
+<p>
+一般の場合も、同様の手法で証明できる（らしい）。
+</p>
+
+<p>
+まず、
+</p>
+\begin{equation}
+\label{eq:1}
+p(x) + p(y) + p(z) = 18
+\end{equation}
+
+<p>
+である。
+今、\(x\) をボルダ勝者とする、すなわち、\(p(x) \ge p(y)\) かつ、 \(p(x) \ge p(z)\) が成り立つとする。
+</p>
+
+<p>
+このとき、\(x\) はペア全敗者でありえないことを示す。
+</p>
+
+<p>
+明らかに、
+</p>
+\begin{equation}
+\label{eq:2}
+p(x) \ge \frac{p(x)+p(y)+p(z)}{3} = 6
+\end{equation}
+
+<p>
+が成り立つ。6点以上獲得するということは、\(x\) は最悪でも
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(3点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(\star\)</td>
+<td class="org-left">\(\star\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(2点)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(\star\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(1点)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">\(x\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+という順序付けや
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(3点)</td>
+<td class="org-left">\(\star\)</td>
+<td class="org-left">\(\star\)</td>
+<td class="org-left">\(\star\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(2点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(1点)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+という、\(\star\) が3つしかないような順序付けになっているはずである。
+</p>
+
+<p>
+もし、\(\star\) が、４つ以上あると、 \(p(x) < 6\) となるからである。
+</p>
+
+<p>
+ここで、\(x\) がペア全敗者であると仮定する。すなわち、ペア同士の多数決で \(y\) 、 \(z\) ともに \(x\) に勝利することになる。
+</p>
+
+<p>
+そのためには
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(3点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(2点)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(1点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+<p>
+や、
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(3点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(2点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(y\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(1点)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">\(x\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+という順序付けが成り立たなければならない。
+すなわち、 \(x\) がペア全敗者であるためには、 テーブル上で \(x\) より上に位置する選択肢が4個以上必要ということになる。
+しかし、これは \(p(x) \ge 6\) と矛盾する。よって、ボルダ勝者 \(x\) は、ペア全敗者ではありえない。 \(\square\)
+</p>
+</div>
+</div>
+<div id="outline-container-org7730454" class="outline-3">
+<h3 id="org7730454">1.1.2 ボルダ勝者と過半数有権者</h3>
+<div class="outline-text-3" id="text-org7730454">
+<p>
+今、5人の有権者がいる次の例を考えてみる：
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+<th scope="col" class="org-left">ゴマ</th>
+<th scope="col" class="org-left">ケロ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(3点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(2点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(1点)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+すると、\(p(x)=12\) 、 \(p(y)=11\) 、 \(p(z)=7\) なので \(x\) がボルダ勝者となる。
+</p>
+
+<p>
+しかし、多数決勝者は \(y\) であり、過半数の有権者が \(y\) を \(x\) より高く順序付けている。
+</p>
+
+<p>
+つまり
+</p>
+<ul class="org-ul">
+<li>ボルダ勝者 \(x\) と多数決勝者 \(y\) が異なる。</li>
+<li>過半数のものは \(y\) を \(x\) より好んでいる。</li>
+</ul>
+<p>
+これは、ボルダルールと多数決の間に大きな対立が生じていると言える。
+</p>
+
+<p>
+ボルダ「いったい多数決勝者が、ボルダ勝者でもあると <b>断定できる</b> のはどの程度の票を集めたときか？」
+</p>
+
+<p>
+上の例のように、5人の有権者と3つの選択肢がある状況では、3票を得るだけでは、その選択肢がボルダ勝者だと断定することはできない。
+</p>
+
+<p>
+4票ではどうだろうか？例えば、\(y\) が下のように多数決で4票得たとしよう
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+<th scope="col" class="org-left">ゴマ</th>
+<th scope="col" class="org-left">ケロ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(3点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(2点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(1点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+\(y\) にとって、起こりうる最悪のケースは
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+<th scope="col" class="org-left">ゴマ</th>
+<th scope="col" class="org-left">ケロ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(3点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(2点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">?</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(1点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">\(y\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+である。しかし、このケースでさえ
+</p>
+
+\begin{equation}
+\label{eq:3}
+p(y) = 13 > 11 = p(x)
+\end{equation}
+
+<p>
+なので、\(y\) は多数決勝者でもあり、ボルダ勝者でもある。
+</p>
+
+<p>
+選択肢を増やしてみたらどうだろうか？
+</p>
+
+<p>
+有権者5人、選択肢6つで考えてみよう。以下の得票状況を考える
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+<th scope="col" class="org-left">ゴマ</th>
+<th scope="col" class="org-left">ケロ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(6点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(5点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(4点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+
+<tr>
+<td class="org-left">4位(3点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+
+<tr>
+<td class="org-left">5位(2点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+
+<tr>
+<td class="org-left">6位(1点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+このとき、\(y\) がボルダ勝者であると断定する事は可能だろうか。
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+<th scope="col" class="org-left">ゴマ</th>
+<th scope="col" class="org-left">ケロ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(6点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(5点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(4点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+
+<tr>
+<td class="org-left">4位(3点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+
+<tr>
+<td class="org-left">5位(2点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+
+<tr>
+<td class="org-left">6位(1点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">\(y\)</td>
+</tr>
+</tbody>
+</table>
+<p>
+であり、
+</p>
+\begin{equation}
+\label{eq:4}
+p(y) = 25 < 26 = p(x)
+\end{equation}
+<p>
+が成り立つ。
+</p>
+
+<p>
+つまり、この状況では、\(y\) がボルダ勝者であるとは断定できない。このケースで、多数決勝者がボルダ勝者であると断定できるのは、その選択肢が全票を集めた場合に限る。
+</p>
+
+<p>
+ボルダはこの不一致が、選択肢の数が有権者の数を上回るときは、常に起こりうることを示した。
+</p>
+
+<p>
+<b>Theorem 2</b><br />
+有権者の数を \(n\) 、選択肢の数を \(m\) とし、 \(n < m\) が成り立つとする。いま、多数決のもとで、 \(n-1\) の有権者が \(y\) に投票し、残る1人が \(x\) に投票し、 \(y\) が多数決勝者となるものとすると、 \(y\) がボルダ勝者であるとは断定できない。
+<br />
+<b>[Proof]</b> <br />
+いま \(n-1\) 人が \(y\) に投票し、残る1人が \(x\) に投票するということは
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">有権者 \(1\)</th>
+<th scope="col" class="org-left">有権者 \(2\)</th>
+<th scope="col" class="org-left">\(\cdots\)</th>
+<th scope="col" class="org-left">有権者 \(n-1\)</th>
+<th scope="col" class="org-left">有権者 \(n\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(\(m\) 点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(\cdots\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(\(m-1\) 点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\vdots\)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">\(m\) 位(1点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+のようなケースだということである。よって、以下の状況も起こりうる
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">有権者 \(1\)</th>
+<th scope="col" class="org-left">有権者 \(2\)</th>
+<th scope="col" class="org-left">\(\cdots\)</th>
+<th scope="col" class="org-left">有権者 \(n-1\)</th>
+<th scope="col" class="org-left">有権者 \(n\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(\(m\) 点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(\cdots\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(\(m-1\) 点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\vdots\)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">\(m\) 位(1点)</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">?</td>
+<td class="org-left">\(y\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+このとき、 \(m > n\) より、
+</p>
+\begin{eqnarray}
+\label{eq:5}
+p(y) - p(x) & = & (n-1)m + 1 - (n-1)(m-1) - m \nonumber\\
+            & = & n - m < 0
+\end{eqnarray}
+
+<p>
+よって、 \(y\) はボルダ勝者ではない。<br />
+\(\square\)
+</p>
+
+<p>
+この定理から、「\(n<m\) のときに多数決勝者がボルダ勝者と断定できるのは、全員一致の支持を得た場合のみに限る」ということがわかる。
+</p>
+</div>
+</div>
+<div id="outline-container-org7e90b4c" class="outline-3">
+<h3 id="org7e90b4c">1.1.3 ボルダルールの戦略的操作</h3>
+<div class="outline-text-3" id="text-org7e90b4c">
+<p>
+戦略的投票に関する指摘について。
+3人の有権者がいる、次の状況を考える。
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(4点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(3点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(2点)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+</tr>
+
+<tr>
+<td class="org-left">4位(1点)</td>
+<td class="org-left">\(w\)</td>
+<td class="org-left">\(w\)</td>
+<td class="org-left">\(w\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+ここで、 \(p(x) = 10, p(y) = 11, p(z) = 6, p(w) = 3\) であり、 \(y\) がボルダ勝者となる。
+</p>
+
+<p>
+\(x\) を最も高く評価するクロにとってこの結果は好ましくない。しかし、もしクロが戦略的に虚偽の順序付けして
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(4点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(3点)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(2点)</td>
+<td class="org-left">\(w\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+</tr>
+
+<tr>
+<td class="org-left">4位(1点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(w\)</td>
+<td class="org-left">\(w\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+となった場合には、 \(p(x) = 10, p(y) = 9, p(z) = 7, p(w) = 4\) であり、ボルダ勝者は \(x\) へと変わる。これはクロにとって望ましい結果だ。
+</p>
+
+<p>
+もう一つの例として
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(3点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(2点)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(1点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+を考える。この場合、 \(p9x) = 7, p(y) = 7, p(z) = 4\) であり、ボルダ勝者は \(x,y\) になる。
+</p>
+
+<p>
+ここで、タマが戦略的に虚偽の投票をすることによって
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(3点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(2点)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(1点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(z\)</td>
+</tr>
+</tbody>
+</table>
+<p>
+となった場合、 \(p(x) = 6, p(y) = 7, p(z) = 5\) であり、ボルダ勝者は \(y\) となる。
+</p>
+
+<p>
+つまり、\(y\) を最も高く評価するタマは、 \(y\) のライバルである \(x\) を最下位に順序つけることによって、 \(x\) ボルダ勝者の座から蹴落とすことができる。
+</p>
+
+<p>
+この戦略的操作による影響は、現在考えられているどのような集約ルールについても完全に排除できないことが知られている。（ギバート＝サタスウェイト定理）
+</p>
+</div>
+</div>
+<div id="outline-container-org1074bee" class="outline-3">
+<h3 id="org1074bee">1.2 コンドルセの考察を巡って</h3>
+</div>
+<div id="outline-container-orga8f3874" class="outline-3">
+<h3 id="orga8f3874">1.2.1 コンドルセと一般意志</h3>
+<div class="outline-text-3" id="text-orga8f3874">
+<p>
+コンドルセについて
+</p>
+<ul class="org-ul">
+<li>M.J.A.N. Condorcet (1743-1794, コンドルセ)はパリ王立科学アカデミーの代表的な学者だった。数学への貢献によりアカデミーに入会。</li>
+<li>数理分析を本格的に用いる社会科学の創始者の一人。</li>
+<li>革命前には政治に関わり自由主義的な経済政策を推し進め、革命後は民主的な社会を強く思考する憲法草案を起草した。</li>
+<li>公教育の重要性も論じた。</li>
+<li>その他、活動は多岐にわたる。</li>
+<li>コンドルセはルソー(Rouseau)の影響を強く受けた啓蒙思想(Lumieres)の理論化であり実践化であった。</li>
+</ul>
+
+<p>
+1.1節で扱ったボルダ論文は、1770年にパリ王立科学アカデミーで発表した内容をまとめたものである。
+この論文は1781年のアカデミー機関誌に解析(analyse)の分類で掲載され、1784年に出版された。
+この掲載に、コンドルセが編集者として関わっており、彼によるボルダ論文の解説が収められている。
+そこで彼は、多数決について、ボルダと同じような指摘をする。（ペア全敗者が多数決勝者になってしまうケースの指摘）
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">8 人</th>
+<th scope="col" class="org-left">7 人</th>
+<th scope="col" class="org-left">6 人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(z\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(y\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+コンドルセは、選択肢が3つ以上の場合、多数決のようにペア全敗者を選ぶようなルールをはやめて、より望ましいものを探そうというモチベーションをボルダと深く共有している。
+</p>
+
+<p>
+ボルダはそこで、ボルダルールを提案することで問題の解決を試みるが、コンドルセはそれとは異なる立場をとる。（ボルダの事は高く評価している）
+</p>
+
+<p>
+コンドルセは集約ルールに対して、 <b>ペア全敗者を選ばないことのみならず、ペア全勝者が存在する場合には、それを選び取ること</b> を求めた。
+</p>
+
+<p>
+<b>ペア全勝者</b> とは、他のどの選択肢に対しても、ペア毎の多数決で勝てる選択肢のこと。上記の例だと、\(z\) がペア全勝者。
+</p>
+
+<p>
+ここでのボルダ得点は
+</p>
+\begin{eqnarray*}
+\label{eq:6}
+p(x) & = & 37\\
+p(y) & = & 41\\
+p(z) & = & 48
+\end{eqnarray*}
+<p>
+なのでペア全勝者の \(z\) を選べている。しかし、この事は常には成り立たない、というのがコンドルセがボルダルールを否定する理由であった。
+</p>
+
+<p>
+1.1節で出てきた下の例で見ると
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+<th scope="col" class="org-left">ゴマ</th>
+<th scope="col" class="org-left">ケロ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位(3点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位(2点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位(1点)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+</tr>
+</tbody>
+</table>
+\begin{eqnarray*}
+\label{eq:7}
+p(x) & = & 12\\
+p(y) & = & 11\\
+p(z) & = & 7
+\end{eqnarray*}
+<p>
+なので、 \(x\) がボルダ勝者であるが、 ペア全勝者は \(y\) である。すなわち、ボルダルールはペア全勝者を選ぶことに失敗している。
+</p>
+
+<p>
+コンドルセは、同様の失敗が、あらゆるスコアリングルールで起こりうることを示した。
+</p>
+
+<p>
+スコアリングルールとは、各選挙人が \(m\) 個の選択肢に対して、好ましい順に \(a_{1} > a_{2} > \cdots > a_{m}\) という得点をつけて、その得点和で総合順位を決める集約ルールのことである。
+例えば
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">クロ</th>
+<th scope="col" class="org-left">タマ</th>
+<th scope="col" class="org-left">ポチ</th>
+<th scope="col" class="org-left">ゴマ</th>
+<th scope="col" class="org-left">ケロ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位( \(a_{1}\) 点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位( \(a_{2}\) 点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位( \(a_{3}\) 点)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+における各選択肢の得点は
+</p>
+\begin{eqnarray*}
+\label{eq:8}
+p(x) & = & 2a_{1} + 3 a_{2}\\
+p(y) & = & 3a_{1} + 2a_{3}\\
+p(z) & = & 2s_{2} + 3a_{3}
+\end{eqnarray*}
+<p>
+である。ボルダルールは \(a_{i} = i\) としたスコアリングルールである。
+</p>
+
+<p>
+<b>Theorem 3</b> <br />
+ペア全勝者が存在するにもかかわらず、どのスコアリングルールもそれを選び取れない状況がある。<br />
+<b>Proof</b><br />
+コンドルセはこの定理を、81人の有権者が存在する下の例を用いて証明した。
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">30人</th>
+<th scope="col" class="org-left">1人</th>
+<th scope="col" class="org-left">29人</th>
+<th scope="col" class="org-left">10人</th>
+<th scope="col" class="org-left">10人</th>
+<th scope="col" class="org-left">1人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1位( \(a_{1}\) 点)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(z\)</td>
+</tr>
+
+<tr>
+<td class="org-left">2位( \(a_{2}\) 点)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(y\)</td>
+</tr>
+
+<tr>
+<td class="org-left">3位( \(a_{3}\) 点)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(z\)</td>
+<td class="org-left">\(x\)</td>
+<td class="org-left">\(y\)</td>
+<td class="org-left">\(x\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+いま、ペア同士の多数決では41対40で \(x\) が \(y\) に勝ち、60対21で \(x\) が \(z\) に勝つので、\(x\) がペア全勝者である。
+</p>
+
+<p>
+一方で、
+</p>
+\begin{eqnarray*}
+\label{eq:9}
+p(x) & = & 31a_{1} + 39 a_{2} + 11a_{3}\\
+p(y) & = & 39a_{1} + 31a_{2} + 11a_{3}\\
+p(z) & = & 11a_{1} + 11s_{2} + 59a_{3}
+\end{eqnarray*}
+<p>
+なので、 \(a_{1} > a_{2} > a_{3}\) である限り、
+</p>
+\begin{eqnarray*}
+\label{eq:10}
+p(y) - p(x) & = & 8(a_{1} - a_{2})>  0 \\
+p(x) - p(z) & = & 20a_{1} + 28a_{2} - 48a_{3} > 48(a_{2} - a_{3}) > 0
+\end{eqnarray*}
+<p>
+よって、 \(p(y) > p(x) > p(z)\) が成り立つ。<br />
+つまり、どのスコアリングルールでも \(y\) を1位とするので、\(x\) は選ばれない。 \(\square\)
+</p>
+
+<p>
+この定理は、各選択肢に得点を割り振ってその総和により社会的選択を行うという、ボルダの発想の核心を否定するものだ。
+この延長線上として、コンドルセは、それぞれの選択肢が「選択肢全体の中で」どの順位を与えられているかという観点を、意思集約から除外することを試みた。
+</p>
+
+<p>
+具体的には、2つの選択肢についてそれぞれ多数決を行い、それらのショ結果を組み合わせて全体の判断を行うという研究プログラムの形をとることになる。
+</p>
+</div>
+<div id="outline-container-orge6ed8fd" class="outline-4">
+<h4 id="orge6ed8fd">コンドルセの方法　選択肢が３つの場合の例</h4>
+<div class="outline-text-4" id="text-orge6ed8fd">
+<p>
+いま、有権者が13人として、3つの選択肢 \(x,y,z\) のうちそれぞれ2つに対し総当り戦でペア毎の多数決を行い、次の結果が得られたとしよう。
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">\(x\)</th>
+<th scope="col" class="org-right">\(y\)</th>
+<th scope="col" class="org-right">\(z\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">\(x\)</td>
+<td class="org-right">-</td>
+<td class="org-right">8</td>
+<td class="org-right">6</td>
+</tr>
+
+<tr>
+<td class="org-left">\(y\)</td>
+<td class="org-right">5</td>
+<td class="org-right">-</td>
+<td class="org-right">11</td>
+</tr>
+
+<tr>
+<td class="org-left">\(z\)</td>
+<td class="org-right">7</td>
+<td class="org-right">2</td>
+<td class="org-right">-</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+読み方:
+</p>
+<ul class="org-ul">
+<li>\(x\) 対 \(y\) では、 8:5 で \(x\) が勝つ</li>
+<li>\(z\) 対 \(x\) では、 7:6 で \(z\) が勝つ</li>
+<li>\(y\) 対 \(z\) では、 11:2 で \(y\) が勝つ</li>
+</ul>
+
+<p>
+ここでは、ペア毎の多数決で循環が生じている。これを <b>コンドルセサイクル</b> という（あるいは単に <b>サイクル</b> ）。
+</p>
+
+<p>
+このサイクルをどうにか崩さなければならない。
+</p>
+
+<p>
+そこで、コンドルセは、最も票差が小さな「7:6 で \(z\) が \(x\) に勝つ」を結果から消去することを提案した( <b>コンドルセの方法</b> )。
+</p>
+
+<p>
+すると、
+</p>
+<ul class="org-ul">
+<li>\(x\) 対 \(y\) では、 8:5 で \(x\) が \(y\) に勝つ</li>
+<li>\(y\) 対 \(z\) では、 11:2 で \(y\) が \(z\) に勝つ</li>
+</ul>
+<p>
+ので、全体の順位が \(xyz\) と決まり、勝者は \(x\) となる。
+</p>
+
+<p>
+選択肢が3つの場合、この方法は、明瞭であり、得票差の小さな結果を無視するのは、直感的にも納得しやすい。
+</p>
+
+<p>
+しかし、コンドルセにとっては、これは単なる直感以上のもので、「得票差の大きい結果は正しい可能性が高い」という考えに基づいている。
+この「正しい」という表現は、コンドルセの問題意識を表している。
+</p>
+</div>
+</div>
+<div id="outline-container-orga4487e1" class="outline-4">
+<h4 id="orga4487e1">ルソーの一般意志</h4>
+<div class="outline-text-4" id="text-orga4487e1">
+<p>
+ルソーの『社会契約論(仏:Du Contrat Social; ou, Principes du droit, 英:The Social Contract) politique』<a href="https://en.wikipedia.org/wiki/The_Social_Contract#:~:text=The%20Social%20Contract%20helped%20inspire,have%20that%20all%2Dpowerful%20right.%20">https://en.wikipedia.org/wiki/The_Social_Contract#:~:text=The%20Social%20Contract%20helped%20inspire,have%20that%20all%2Dpowerful%20right.%20</a>では、一般意志(仏:volonté générale, 英:general will)という、ある種の共通利益を尊重することが重んじられる。
+ルソーは一般意志と合致する選択肢を、人民の集会で多数決により探し当てることを考える。
+そこでは各人は「私的利益に基づき何かを好む」ではなく、「私的立場を離れたうえでの、何が正しい可への判断」を表明することが求められる。
+</p>
+
+<p>
+そしてルソーは「もし私の表明したことが多数決の結果と異なっているのならば、それは私が間違っていたことを意味しており、私が一般意志だと思っていたことがそうではなかったのだ」と論じている（第4篇、第2章）。
+</p>
+
+<p>
+コンドルセはルソー的な意思集約を念頭に置いており、一般意志に合致する選択肢を見つける手段を見つけるのが彼の投票研究の問題意識であったと考えられる。
+</p>
+
+<p>
+コンドルセ「これは渡井自身ではなく、全員にとっての問なのだ。つまり私は、私が単に良いと思うものを選ぶべきではない。各自固有の意見から抜け出た人々が理性と心理に適合すると考えるもの、を選ばねばならない」
+</p>
+
+<p>
+一般意志に適うものがなにであるかは、最初から明らかなわけではない。
+それゆえ、一般意志に合致する選択肢の探索手段としてルソーは投票を考えていたし、その考えを引き継いだコンドルセにとって、正しい可能性が高い選択肢を探すのは本質的なことであった。
+</p>
+</div>
+</div>
+<div id="outline-container-org086a271" class="outline-4">
+<h4 id="org086a271">コンドルセの方法の瑕疵</h4>
+<div class="outline-text-4" id="text-org086a271">
+<p>
+コンドルセの方法は、選択肢が3つのときは簡単に実行できる。ペア全勝者が存在する場合には、それを選び取ればよい。
+だが、選択肢が4つ以上存在するとき、この方法は必ずしもうまく機能しないことが、指摘された(Nanson, Black)。以下は Young による例。
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+
+<colgroup>
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">\(x\)</th>
+<th scope="col" class="org-right">\(y\)</th>
+<th scope="col" class="org-right">\(z\)</th>
+<th scope="col" class="org-right">\(w\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">\(x\)</td>
+<td class="org-right">-</td>
+<td class="org-right">12</td>
+<td class="org-right">15</td>
+<td class="org-right">17</td>
+</tr>
+
+<tr>
+<td class="org-left">\(y\)</td>
+<td class="org-right">13</td>
+<td class="org-right">-</td>
+<td class="org-right">16</td>
+<td class="org-right">11</td>
+</tr>
+
+<tr>
+<td class="org-left">\(z\)</td>
+<td class="org-right">10</td>
+<td class="org-right">9</td>
+<td class="org-right">-</td>
+<td class="org-right">18</td>
+</tr>
+
+<tr>
+<td class="org-left">\(w\)</td>
+<td class="org-right">8</td>
+<td class="org-right">14</td>
+<td class="org-right">7</td>
+<td class="org-right">-</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+多数決の結果は
+</p>
+<ul class="org-ul">
+<li>13 : 12 で \(y\) が \(x\) に勝つ</li>
+<li>15 : 10 で \(x\) が \(z\) に勝つ</li>
+<li>17 : 8 で \(x\) が \(w\) に勝つ</li>
+<li>16 : 9 で \(y\) が \(z\) に勝つ</li>
+<li>14 : 11 で \(w\) が \(y\) に勝つ</li>
+<li>18 : 7 で \(z\) が \(w\) に勝つ</li>
+</ul>
+<p>
+となり、 サイクル \(yxzwy\) が発生している。
+</p>
+
+<p>
+ここから、最も得票差が小さい「13 : 12 で \(y\) が \(x\) に勝つ」を消去するとサイクル \(yzwy\) が残る。
+</p>
+
+<p>
+次に得票差が小さな結果である「14 : 11 で \(w\) が \(y\) に勝つ」を消去すると、
+</p>
+<ul class="org-ul">
+<li>15 : 10 で \(x\) が \(z\) に勝つ</li>
+<li>17 : 8 で \(x\) が \(w\) に勝つ</li>
+<li>16 : 9 で \(y\) が \(z\) に勝つ</li>
+<li>18 : 7 で \(z\) が \(w\) に勝つ</li>
+</ul>
+<p>
+こととなり、これでサイクルはなくなった。しかし、残った結果からは、 \(x\) と \(y\) のどちらを上位にするかは確定できない。
+これが、コンドルセの方法が上手くいかない例である。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org4bcfd86" class="outline-3">
+<h3 id="org4bcfd86">1.2.2 2択問題における多数決の優位性</h3>
+<div class="outline-text-3" id="text-org4bcfd86">
+<p>
+社会的選択に関するコンドルセの議論：
+ある裁判の被告に対し、一人ひとりの有権者が独立に、「有罪」であるか「無罪」であるか判断して、いずれかに票を入れる多数決を考えて見よう。
+</p>
+
+<p>
+有罪と無罪、どちらが正しいかは完全にはわからない。
+</p>
+
+<p>
+有権者が、有罪と無罪を正しく判断できる確率が全有権者で同じ \(0.5 < v \le 1\) であると仮定しよう。
+</p>
+
+<p>
+これは、人間の判断が、完全にランダムな判断 \(v = \frac{1}{2}\) よりは、制度が高いことを仮定している。
+</p>
+
+<p>
+このかていのもと、3人の有権者が、それぞれ、独立に判断を行い、多数決を取った結果が正しい確率は
+</p>
+
+\begin{equation}
+\label{eq:11}
+v^{3} + 3v^{2}(1-v)
+\end{equation}
+<p>
+である。
+<b>Theorem 4</b> <br />
+\(0.5 < v < 1\) ならば
+</p>
+\begin{equation}
+\label{eq:12}
+v^{3} + 3v^{2}(1-v) > v
+\end{equation}
+<p>
+が成り立つ。すなわち、3人による多数決の結果が正しい確率は、一人が正しい確率を上回る。<br />
+<b>Proof</b><br />
+\(0.5 < v < 1\) であるから、
+</p>
+\begin{eqnarray}
+\label{eq:13}
+v^{3} + 3v^{2}(1-v) - v& = & v\{v^{2} + 3v(1-v) - 1\} \nonumber\\
+                    & = & v(-2v^{2} + 3v - 1) \nonumber\\
+                    & = & v(-2v + 1)(v - 1) \nonumber \\
+                    & = & -2v(v - \frac{1}{2})(v - 1) > 0 \nonumber
+\end{eqnarray}
+<p>
+\(\square\)
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">&#26085;&#20184;: 2022-09-02 金 00:00</p>
+<p class="author">&#33879;&#32773;: Hisanobu Nakamura</p>
+<p class="date">Created: 2022-10-12 水 19:51</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}社会的選択理論への招待　坂井豊貴}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}本書の構成}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}本書の特徴}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}第１章　問題の出発点}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}1.1.1 ボルダルールの提案}{2}{subsection.2.1}%
